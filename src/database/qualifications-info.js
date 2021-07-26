@@ -1,0 +1,21 @@
+module.exports = [
+  'Introdução ao React, Rocketseat, conclusão em 2021',
+  'Javascript ES6, Rocketseat, conclusão em 2021',
+  'Rest com NodeJS: API com Express e Mysql, Alura, conclusão 2021',
+  'JAVA Tutorial Course, Sololearn, conclusão em 2019.',
+  'JAVA POO, Curso em Vídeo, conclusão em 2019.',
+  'JAVA para Iniciantes, Curso em Vídeo, conclusão em 2019.',
+  'Javascript Tutorial Course, Sololearn, conclusão em 2019.',
+  'CSS3 Fundamentals Course, Sololearn, conclusão em 2019.',
+  'JQuery Tutorial Course, Sololearn, conclusão em 2019.',
+  'PHP Tutorial Course, Sololearn, conclusão em 2019.',
+  'SQL Fundamentals Course, Sololearn, conclusão em 2017.',
+  'HTML5 Fundamentals Course, Sololearn, conclusão em 2018.',
+  'C++ Tutorial Course, Sololearn, conclusão em 2019.',
+  'Ruby Tutorial Course, Sololearn, conclusão em 2018.',
+  'Inglês básico, CNA, conclusão em 2011.',
+  'Montagem e Manutenção de Microcomputadores, INTEP, conclusão em 2015.',
+  'HTML4, Center News, conclusão em 2009.',
+  'Montagem e Manutenção de Microcomputadores, Remington, conclusão em 2009.',
+  'Curso de Informática básica (Pacote Office, Win XP, CorelDraw), conclusão em 2009'
+]
