@@ -1,0 +1,19 @@
+{
+  "name": "curriculum",
+  "version": "1.0.0",
+  "description": "Here it is described my professional skills and experience.",
+  "main": "src/server.js",
+  "repository": "https://github.com/lucasdepessoa/curriculum.git",
+  "author": "Lucas F Pessoa",
+  "license": "GNU",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
