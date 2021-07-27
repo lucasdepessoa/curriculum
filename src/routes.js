@@ -1,10 +1,10 @@
 const routes = require('express').Router()
+const resumeController = require('./controllers/resumeController')
 
+//Contact Information//
+routes.get('/contact-info',resumeController.getContact)
 
-routes.get('/', (req, res) => {
-  res.send('Ola mundo, résumé.')
-})
-
-
+//Academic Information//
+routes.get('/academic-info',resumeController.getAcademic)
 
 module.exports = routes

@@ -11,9 +11,11 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon src/server.js"
   }
 }

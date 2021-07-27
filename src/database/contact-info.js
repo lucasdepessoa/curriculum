@@ -1,6 +1,7 @@
 module.exports = {
   name: 'Lucas Fernandes Pessoa',
   address: 'Rua Angelo Guaraldo',
+  district: 'Vila São Sebastião',
   number: '983',
   cell: '99383-0612',
   ddd: '16',
