@@ -2,19 +2,19 @@
 My résumé, here is described my professional skills and experience.
 
 ## Contact Information
-  /contact-info
+  https://curriculum-lpessoa.herokuapp.com/contact-info
 
 ## Academic Information
-  /academic-info
+  https://curriculum-lpessoa.herokuapp.com/academic-info
 
 ## Experience Information
-  /experience-info
+  https://curriculum-lpessoa.herokuapp.com/experience-info
 
 ## Skills Information
-  /skills-info
+  https://curriculum-lpessoa.herokuapp.com/skills-info
 
 ## Qualifications Information
-  /qualifications-info
+  https://curriculum-lpessoa.herokuapp.com/qualifications-info
 
 ## Status
-Under development
+Under development, for now, use the routes with the GET method only.
