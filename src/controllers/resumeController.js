@@ -3,7 +3,7 @@ const data = require('../models/resumeAccess')
 class resumeController {
 
   getContact(req, res){
-    
+
     //Bring me the data//
     let contact = data.getContactInfo()
 
@@ -69,6 +69,47 @@ class resumeController {
     //message end//
     message += `</dl>`
   
+    //send status and a message//
+    res.status(200).send(message)
+  }
+
+  getSkills(req, res){
+
+    //bring me data//
+    const skills = data.getSkillsInfo()
+
+    //message start//
+    let message = `<dl style="list-style-type:none">
+    <dt>HABILIDADES</dt>`
+
+
+    //scroll through the array to build the message"
+    for(let i=0; i<skills.length; i++){
+      message += `<dd>${skills[i]}</dd>`
+    }
+
+    //message end//
+    message += '</dl>'
+
+    res.status(200).send(message)
+  }
+
+  getQualifications(req, res){
+    
+    //bring me data//
+    const qualification = data.getQualificationsInfo()
+
+    //message start//
+    let message = `<dl style="list-style-type:none">
+    <dt>QUALIFICAÇÕES TÉCNICAS</dt>`
+
+    qualification.forEach((element,index,arr) => {
+      message += `<dd> ${element} </dd>` 
+    });
+    
+    //message end//
+    message += '</dl>'
+
     //send status and a message//
     res.status(200).send(message)
   }
