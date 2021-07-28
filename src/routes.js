@@ -2,11 +2,7 @@ const routes = require('express').Router()
 const resumeController = require('./controllers/resumeController')
 
 //Main route//
-routes.get('/', (req, res) => {
-  res.render('index', {
-    title: 'My Resume'
-  })
-})
+routes.get('/', resumeController.getMain)
 
 //Contact Information//
 routes.get('/contact-info', resumeController.getContact)

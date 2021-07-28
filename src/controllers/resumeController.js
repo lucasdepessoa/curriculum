@@ -1,6 +1,24 @@
 const data = require('../models/resumeAccess')
+const moment = require('moment')
 
 class resumeController {
+
+  getMain(req, res){
+
+    //Get actual date//
+    let now = new moment()
+   
+    res.render(
+      'index', 
+      {
+      contact: data.getContactInfo(),
+      academic: data.getAcademicInfo(),
+      experience: data.getExperienceInfo(),
+      skills: data.getSkillsInfo(),
+      qualifications: data.getQualificationsInfo(),
+      birth: now.diff(data.getContactInfo().birthDate,'years')
+    })
+  }
 
   getContact(req, res){
 

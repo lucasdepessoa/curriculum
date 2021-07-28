@@ -4,7 +4,7 @@ module.exports = [
     companyAdress: 'Av. Rio Negro, 1200',
     office: 'Auxiliar de Informática',
     dateStart: '2016-01-06',
-    dateEnd: 'currently',
+    dateEnd: 'Present',
     jobDescription: [
       'Prestar assistência técnica aos usuários internos. (Funcionários)',
       'Análise e manutenção de dados administrativos, financeiros.',
@@ -16,5 +16,5 @@ module.exports = [
       'Unificação de custos com a Regional aos finais de semana, via linux.',
       'Desenvolvimento de soluções rápidas, de acordo com a necessidade e com a tecnologia mais adequada'
     ] 
-  },
+  }
 ]

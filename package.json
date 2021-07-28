@@ -5,17 +5,16 @@
   "main": "src/server.js",
   "repository": "https://github.com/lucasdepessoa/curriculum.git",
   "author": "Lucas F Pessoa",
-  "license": "GNU",
-  "private": false,
+  "license": "MIT",
+  "private": true,
   "dependencies": {
-    "@types/nodemon": "^1.19.1",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "moment": "^2.29.1"
   },
   "devDependencies": {
-    "jest": "^27.0.6",
-    "nodemon": "^2.0.12"
+    "jest": "^27.0.6"
   },
   "scripts": {
     "test": "jest",
