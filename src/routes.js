@@ -4,7 +4,7 @@ const resumeController = require('./controllers/resumeController')
 //Main route//
 routes.get('/', (req, res) => {
   res.render('index', {
-    title: 'My Résumé'
+    title: 'My Resume'
   })
 })
 

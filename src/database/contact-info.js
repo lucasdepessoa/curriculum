@@ -13,11 +13,10 @@ module.exports = {
   gitProfile: 'https://github.com/lucasdepessoa',
   email: 'lucasdepessoa@gmail.com',
   socialNetwork: {
-    linkedIn: 'https://www.linkedin.com/in/lucas-pessoa-56b9b813b',
+    linkedIn: 'https://www.linkedin.com/in/lucasdepessoa',
     instragram: '',
     facebook: '',
     twitter: '',
     medium: ''
-  },
-  profilePicture:'database/profileImage.PNG'
+  }
 }
