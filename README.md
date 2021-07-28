@@ -25,7 +25,7 @@ Under development.
   - NodeJs
   - Express
   - Yarn
-  - Jest
+  - Jest TDD
   - Nodemon
 
 ## Front end
