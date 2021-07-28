@@ -3,7 +3,9 @@ const resumeController = require('./controllers/resumeController')
 
 //Main route//
 routes.get('/', (req, res) => {
-  res.send('Under development ;D')
+  res.render('index', {
+    title: 'My Résumé'
+  })
 })
 
 //Contact Information//

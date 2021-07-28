@@ -1,20 +1,46 @@
-# curriculum
-My résumé, here is described my professional skills and experience.
+# My Résumé
 
-## Contact Information
-  https://curriculum-lpessoa.herokuapp.com/contact-info
+My personal skills, qualifications and professional experience.
 
-## Academic Information
-  https://curriculum-lpessoa.herokuapp.com/academic-info
+## API REST
 
-## Experience Information
-  https://curriculum-lpessoa.herokuapp.com/experience-info
+For now, just GET method has been inplemented.
 
-## Skills Information
-  https://curriculum-lpessoa.herokuapp.com/skills-info
+```bash
+GET /endpoint/
+```
 
-## Qualifications Information
-  https://curriculum-lpessoa.herokuapp.com/qualifications-info
+## Usage endpoints
+
+```python
+GET
+
+# returns Main Information {/}
+https://curriculum-lpessoa.herokuapp.com/
+
+# returns Contact information {contact-info}
+https://curriculum-lpessoa.herokuapp.com/contact-info
+
+# returns Academic Information {academic-info}
+https://curriculum-lpessoa.herokuapp.com/academic-info
+
+# returns Experience Information {experience-info}
+https://curriculum-lpessoa.herokuapp.com/contact-info
+
+# returns Skills Information
+https://curriculum-lpessoa.herokuapp.com/contact-info
+
+# returns Qualification Information
+https://curriculum-lpessoa.herokuapp.com/contact-info
+
+'Test with POSTMAN'
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. But it is worth remembering that this content is just to demonstrate my résumé.
+
+## License
+[GNU](https://choosealicense.com/licenses/gpl-3.0/)
 
 ## Status
-Under development, for now, use the routes with the GET method only.
+Under development, for now.

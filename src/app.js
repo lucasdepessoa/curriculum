@@ -10,6 +10,8 @@ class AppControll {
 
   middlewares(){
     this.express.use(express.json())
+    this.express.set('view engine','ejs')
+    this.express.set('views',__dirname + '/views')
   }
 
   routes(){
