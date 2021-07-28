@@ -25,13 +25,13 @@ https://curriculum-lpessoa.herokuapp.com/contact-info
 https://curriculum-lpessoa.herokuapp.com/academic-info
 
 # returns Experience Information {experience-info}
-https://curriculum-lpessoa.herokuapp.com/contact-info
+https://curriculum-lpessoa.herokuapp.com/experience-info
 
 # returns Skills Information
-https://curriculum-lpessoa.herokuapp.com/contact-info
+https://curriculum-lpessoa.herokuapp.com/skills-info
 
 # returns Qualification Information
-https://curriculum-lpessoa.herokuapp.com/contact-info
+https://curriculum-lpessoa.herokuapp.com/qualifications-info
 
 'Test with POSTMAN'
 ```
