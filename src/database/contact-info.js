@@ -14,7 +14,7 @@ module.exports = {
   country: 'Brazil',
   email: 'lucasdepessoa@gmail.com',
   socialNetwork: {
-    gitHubProfile: 'https://github.com/lucasdepessoa',
+    gitHub: 'https://github.com/lucasdepessoa',
     linkedIn: 'https://www.linkedin.com/in/lucasdepessoa',
     instragram: '',
     facebook: '',
