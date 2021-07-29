@@ -140,3 +140,9 @@ footer a:not(.nav-link) {
   .page-break {
     padding-top: 5rem;
     page-break-before: always; } }
+
+/* Custom CSS by Lucas F Pessoa */
+
+div.about-me-text p {
+  text-align: justify;
+}
