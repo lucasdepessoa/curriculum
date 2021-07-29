@@ -7,9 +7,6 @@ class resumeController {
 
     //Get actual date//
     let now = new moment()
-
-    //Get the array length of skills array//
-    let skillsLength = Math.ceil(data.getSkillsInfo().skills.length / 2)
    
     res.render(
       'index', 
@@ -19,9 +16,14 @@ class resumeController {
       experience: data.getExperienceInfo(),
       skills: data.getSkillsInfo(),
       qualifications: data.getQualificationsInfo(),
+      /*
+        customOptions : Opções customizadas pensadas especificamente para esse ponto,
+        são alguns valores que dependem de calculos, que é preferível que sejam feitos
+        no back end.
+      */
       customOptions: {
         birth: now.diff(data.getContactInfo().birthDate,'years'),
-        skillsLength: skillsLength 
+        skillsLength: Math.ceil(data.getSkillsInfo().skills.length / 2)
       }
       
     })
