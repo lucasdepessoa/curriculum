@@ -23,7 +23,9 @@ class resumeController {
       */
       customOptions: {
         birth: now.diff(data.getContactInfo().birthDate,'years'),
-        skillsLength: Math.ceil(data.getSkillsInfo().skills.length / 2)
+        hardSkillsLength: Math.ceil(data.getSkillsInfo().hardSkills.length / 2),
+        softSkillsLength: Math.ceil(data.getSkillsInfo().softSkills.length / 2),
+        frameworksLength: Math.ceil(data.getSkillsInfo().frameworks.length / 2)
       }
       
     })

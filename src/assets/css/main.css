@@ -146,3 +146,12 @@ footer a:not(.nav-link) {
 div.about-me-text p {
   text-align: justify;
 }
+
+div.rounded-border {
+  border: 1px solid #b1b1b1;
+  border-radius: 2px!important;
+}
+
+.bg-supreme {
+  background-color: #000!important;
+}
