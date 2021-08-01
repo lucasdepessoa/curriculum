@@ -147,6 +147,7 @@ class resumeController {
 
   sendMail(req, res) {
 
+    //Configuration for email transporter//
     const transporter = nodeMailer.createTransport({
       host: smtp_config.host,
       port: smtp_config.port,
@@ -158,7 +159,7 @@ class resumeController {
       tls: { rejectUnauthorized: false }
     })
 
-
+    //Sending an email//
     transporter.sendMail({
       text: `Hello i'am ${req.body.name} and i would like to say:\n ${req.body.message}`,
       from: req.body.email,
