@@ -19,4 +19,7 @@ routes.get('/skills-info', resumeController.getSkills)
 //Qualifications Information//
 routes.get('/qualifications-info', resumeController.getQualifications)
 
+//Post route for send email//
+routes.post('/', resumeController.sendMail)
+
 module.exports = routes

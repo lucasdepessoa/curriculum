@@ -11,6 +11,8 @@ class AppControll {
   middlewares() {
     //Enable read JSON///
     this.express.use(express.json())  
+    //Enable urlencoded translation//
+    this.express.use(express.urlencoded({extended:true}))
     //Enable ejs view engine//
     this.express.set('view engine', 'ejs')
     //Set /views as deafult folder for views//
