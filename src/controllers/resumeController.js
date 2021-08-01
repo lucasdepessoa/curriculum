@@ -145,7 +145,7 @@ class resumeController {
     res.status(200).send(message)
   }
 
-  sendMail(req, res) {
+  async sendMail(req, res) {
 
     //Configuration for email transporter//
     const transporter = nodeMailer.createTransport({
@@ -160,20 +160,22 @@ class resumeController {
     })
 
     //Sending an email//
-    transporter.sendMail({
+    await transporter.sendMail({
       text: `Hello i'am ${req.body.name} and i would like to say:\n ${req.body.message}`,
       from: req.body.email,
-      to: [process.env.SMTP_USER, 'ananda.anm@gmail.com'],
+      to: [process.env.SMTP_USER],
       subject: 'New Contact from My Resume'
     }, (error, info) => {
       if (error) {
         console.log(error)
+
+        res.status(502).send(error)
       } else {
         console.log(info)
+        res.redirect(req.originalUrl)
       }
     })
 
-    res.status(200).send()
   }
 }
 
