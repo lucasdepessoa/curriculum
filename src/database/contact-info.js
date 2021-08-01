@@ -13,6 +13,7 @@ module.exports = {
   city: 'Franca',
   country: 'Brazil',
   email: 'lucasdepessoa@gmail.com',
+  devEmail: 'lpessoadev@gmail.com',
   socialNetwork: {
     gitHub: 'https://github.com/lucasdepessoa',
     linkedIn: 'https://www.linkedin.com/in/lucasdepessoa',

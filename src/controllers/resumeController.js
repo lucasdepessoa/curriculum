@@ -1,5 +1,7 @@
 const data = require('../models/resumeAccess')
 const moment = require('moment')
+const nodeMailer = require('nodemailer')
+const smtp_config = require('../config/smtp')
 
 class resumeController {
 
@@ -141,6 +143,31 @@ class resumeController {
 
     //send status and a message//
     res.status(200).send(message)
+  }
+
+  async sentMail(req, res){
+
+    const transporter = nodeMailer.createTransport({
+      host: smtp_config.host,
+      port: smtp_config.port,
+      secure: false,
+      auth: {
+        user: smtp_config.user,
+        pass: smtp_config.pass
+      },
+      tls : {rejectUnauthorized:false}
+    })
+
+    await transporter.sendMail({
+      from: req.body.email,
+      to: [process.env.SMTP_USER, 'ananda.anm@gmail.com'],
+      subject: 'New Contact from My Resuem',
+      text: `Hello i'm ${req.body.name} and i'll say of : ${req.body.message}`
+    })
+
+    console.log(transporter)
+
+    res.send(200).send()
   }
 }
 
