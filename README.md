@@ -30,6 +30,7 @@ Under development.
 
 ## Front end
   - HTML / CSS / JS
+  - Jquery
   - EJS Engine
   - Base Template for [templateFlip](https://templateflip.com/)
 
@@ -44,22 +45,22 @@ Under development.
 ```bash
 GET
 
-# returns Main Information {/}
+# returns Main refined Information {/}
 https://curriculum-lpessoa.herokuapp.com/
 
-# returns Contact information {contact-info}
+# returns Contact brute information {contact-info}
 https://curriculum-lpessoa.herokuapp.com/contact-info
 
-# returns Academic Information {academic-info}
+# returns Academic brute Information {academic-info}
 https://curriculum-lpessoa.herokuapp.com/academic-info
 
-# returns Experience Information {experience-info}
+# returns Experience brute Information {experience-info}
 https://curriculum-lpessoa.herokuapp.com/experience-info
 
-# returns Skills Information
+# returns Skills brute Information
 https://curriculum-lpessoa.herokuapp.com/skills-info
 
-# returns Qualification Information
+# returns Qualification brute Information
 https://curriculum-lpessoa.herokuapp.com/qualifications-info
 
 'Test with POSTMAN for example'
