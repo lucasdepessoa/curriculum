@@ -133,6 +133,7 @@ footer a:not(.nav-link) {
   .skills-section,
   .work-experience-section,
   .education-section,
+  .qualifications-section,
   .portfolio-section,
   .reference-section,
   .contact-section {
@@ -154,4 +155,9 @@ div.rounded-border {
 
 .bg-supreme {
   background-color: #000!important;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
 }
