@@ -21,6 +21,6 @@
   "scripts": {
     "test": "jest",
     "start": "node src/server.js",
-    "dev": "nodemon -e js,ejs,html src/server.js"
+    "dev": "nodemon -e .css,js,ejs,html src/server.js"
   }
 }
