@@ -247,14 +247,22 @@ i.iconQuali {
 
 @media print {
   body {
+    margin: 0;
     padding: 0;
+    line-height: 1.2em;
   }
   .sidA {
     width: 50%;
     display: inline;
   }
-  .sidB { 
+  .sidB {
     width: 50%;
     display: inline;
+  }
+  .corrige_print{
+    padding-top: 10px!important;
+  }
+  @page {
+    margin: 2cm 1cm 1cm 2cm;
   }
 }

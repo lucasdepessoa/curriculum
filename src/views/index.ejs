@@ -184,7 +184,7 @@
             <h2 class="h2 fw-light mb-4">Professional Skills</h2>
             <h4 class="h4 fw-light mb-4"> Hard Skills</h4>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 sidA">
                 <% for(let i=0; i < customOptions.hardSkillsLength ; i++) { %>
 
                   <div class="mb-3"><span class="fw-bolder"><%= skills.hardSkills[i].tech %></span>
@@ -198,7 +198,7 @@
                 <% } %>
 
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 sidB">
                 
                 <% for(let i=customOptions.hardSkillsLength; i < skills.hardSkills.length ; i++) { %>
 
@@ -216,7 +216,7 @@
             </div>
             <h4 class="h4 fw-light mb-4 mt-4"> FrameWorks / Libs</h4>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 sidA">
 
                 <% for(let i=0; i < customOptions.frameworksLength ; i++) { %>
 
@@ -232,7 +232,7 @@
 
 
               </div>  
-              <div class="col-md-6">
+              <div class="col-md-6 sidB">
                 
                 <% for(let i=customOptions.frameworksLength; i < skills.frameworks.length ; i++) { %>
 
@@ -250,11 +250,11 @@
             </div>
             <h4 class="h4 fw-light mb-4 mt-4"> Soft Skills</h4>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 sidA corrige_print">
 
                 <% for(let i=0; i < customOptions.softSkillsLength ; i++) { %>
 
-                  <div class="mb-3"><span class="fw-bolder"><%= skills.softSkills[i].tech %></span>
+                  <div class="mb-3 "><span class="fw-bolder"><%= skills.softSkills[i].tech %></span>
                     <div class="progress my-2 rounded rounded-border" style="height: 20px">
                       <div class="progress-bar <%= skills.softSkills[i].style %>" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100"
                         data-aos-anchor=".skills-section" style="width: <%= skills.softSkills[i].width %>;" aria-valuenow="<%= skills.softSkills[i].ariaValueNow %>" aria-valuemin="0"
@@ -265,7 +265,7 @@
                 <% } %>
         
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 sidB corrige_print">
                 
                 <% for(let i=customOptions.softSkillsLength; i < skills.softSkills.length ; i++) { %>
 
