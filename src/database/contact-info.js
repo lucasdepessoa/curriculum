@@ -26,6 +26,6 @@ module.exports = {
   aboutMe: [
     'Olá! eu sou Lucas Fernandes Pessoa, sempre fui apaixonado por tecnologia desde que me entendo por gente, mas só paixão não basta, é necessário muita disciplina e estudo diário para o auto aprimoramento. Procuro um ambiente de trabalho que me desafie diariamente, não gosto de me sentir acomodado. A criatividade é o meu ponto forte, gosto de desenvolver soluções inteligentes para tudo que faço ou participo.',
     
-    'Hello! I’m Lucas Fernandes Pessoa I\'ve always been passionate about technology, but passion is not enough, it takes a lot of discipline and daily study for self-improvement. I\'m looking for a work environment that challenges me daily, I don\'t like to feel accommodated. Creativity is my strong point, I like to develop intelligent solutions for everything I do or participate.'
+    'Hello! I’m Lucas Fernandes Pessoa I\'ve always been passionate about technology, but passion is not enough, it takes a lot of discipline and daily study for self-improvement. I\'m looking for a work environment that challenges me daily, I don\'t like to feel accommodated. Creativity is my strong point, I like to develop smart solutions for everything I do or participate.'
   ]
 }

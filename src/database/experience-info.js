@@ -14,7 +14,7 @@ module.exports = [
       'Comunicação diária com a Matriz via linux e jobs específicos, através da rotina Batch.',
       'Tratativa do sistema para fechamento do sistema e abertura no dia seguinte.',
       'Unificação de custos com a Regional aos finais de semana, via linux.',
-      'Desenvolvimento de soluções rápidas, de acordo com a necessidade e com a tecnologia mais adequada'
+      'Desenvolvimento de soluções rápidas, de acordo com a necessidade e com a tecnologia mais adequada.'
     ] 
   }
 ]
