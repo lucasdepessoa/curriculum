@@ -489,7 +489,7 @@
                 <div class="mt-5 d-print-none">
                   <form action="/" method="POST">
                     <div class="form-outline mb-4">
-                      <input type="text" id="name" name="name" class="form-control" required />
+                      <input type="text" id="name" name="name" class="form-control" required/>
                       <label class="form-label" for="name">Name</label>
                     </div>
                     <div class="form-outline mb-4">
@@ -500,6 +500,19 @@
                       <textarea class="form-control" name="message" style="resize: none;" id="message" rows="4" required></textarea>
                       <label class="form-label" for="message">Message</label>
                     </div>
+
+                    <!-- temporary solution -->
+                    <% if(customOptions.message == 'E-mail sended succefully' ) { %>
+                      <div class="alert alert-success text-center">
+                        <%= customOptions.message %>
+                      </div>
+                    <% }else if( customOptions.message == 'Error e-mail not sent') { %>
+                    <!-- temporary solution -->
+                      <div class="alert alert-danger text-center">
+                        <%= customOptions.message %>
+                      </div>
+                    <% } %>
+                    
                     <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
                   </form>
                 </div>

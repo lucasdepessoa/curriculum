@@ -1,4 +1,6 @@
 const express = require('express')
+const flash = require('connect-flash')
+const session = require('express-session')
 
 class AppControll {
   constructor() {
@@ -9,6 +11,14 @@ class AppControll {
   }
 
   middlewares() {
+    //Enable connect-flash and express-session//
+    this.express.use(session({
+      secret:'secret',
+      cookie: {maxAge: 60000},
+      resave: false,
+      saveUninitialized: false
+    }))
+    this.express.use(flash())
     //Enable read JSON///
     this.express.use(express.json())  
     //Enable urlencoded translation//
