@@ -1,5 +1,4 @@
 const express = require('express')
-const flash = require('connect-flash')
 const session = require('express-session')
 
 class AppControll {
@@ -11,6 +10,7 @@ class AppControll {
   }
 
   middlewares() {
+   
     //Enable connect-flash and express-session//
     this.express.use(session({
       secret:'secret',
@@ -18,7 +18,11 @@ class AppControll {
       resave: false,
       saveUninitialized: false
     }))
-    this.express.use(flash())
+    this.express.use((req,res,next)=>{
+      res.locals.message = req.session.message
+      delete req.session.message
+      next()
+    })
     //Enable read JSON///
     this.express.use(express.json())  
     //Enable urlencoded translation//

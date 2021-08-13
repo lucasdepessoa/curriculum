@@ -2,8 +2,6 @@ const data = require('../models/resumeAccess')
 const moment = require('moment')
 const nodeMailer = require('nodemailer')
 const smtp_config = require('../config/smtp')
-const { response } = require('express')
-const flash = require('connect-flash/lib/flash')
 
 class resumeController {
 
@@ -30,8 +28,7 @@ class resumeController {
           hardSkillsLength: Math.ceil(data.getSkillsInfo().hardSkills.length / 2),
           softSkillsLength: Math.ceil(data.getSkillsInfo().softSkills.length / 2),
           frameworksLength: Math.ceil(data.getSkillsInfo().frameworks.length / 2),
-          qualiLentgh: Math.ceil(data.getQualificationsInfo().length / 2),
-          message: req.flash('message')
+          qualiLentgh: Math.ceil(data.getQualificationsInfo().length / 2)
         }
       })
   }
@@ -88,14 +85,23 @@ class resumeController {
       subject: 'New Contact from My Resume'
     }, (error, info) => {
       if (error) {
-        //temporary solution//
-        req.flash('message', 'Error e-mail not sent')
+        
+        req.session.message = {
+          type: 'danger',
+          intro: 'Error: ',
+          message: 'e-mail not sent'
+        }
+
         res.redirect(req.originalUrl + '#contact')
 
       } else {
-        
-        //temporary solution//
-        req.flash('message', 'E-mail sended succefully')
+
+        req.session.message = {
+          type: 'success',
+          intro: 'Success: ',
+          message: 'e-mail sended succefully'
+        }
+
         res.redirect(req.originalUrl + '#contact')
       }
     })
