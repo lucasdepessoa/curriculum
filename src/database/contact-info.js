@@ -8,7 +8,7 @@ module.exports = {
   ddd: '16',
   phone: '',
   whatsApp: '16 9 99383-0612',
-  cep: '14406-679',
+  cep: '',
   state: 'São Paulo', 
   city: 'Franca',
   country: 'Brazil',
