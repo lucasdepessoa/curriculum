@@ -92,7 +92,7 @@
                       <nav role="navigation">
                         <ul class="nav justify-content-center">
                           <li class="nav-item"><a class="nav-link" href="<%= contact.socialNetwork.linkedIn %>"
-                              title="Instagram"><i class="fab fa-linkedin"></i><span
+                              title="LinkedIn"><i class="fab fa-linkedin"></i><span
                                 class="menu-title sr-only">LinkedIn</span></a>
                           </li>
                           <li class="nav-item"><a class="nav-link" href="<%= contact.socialNetwork.gitHub %>"
@@ -153,8 +153,8 @@
                     <div class="pb-2">lucasdepessoa#2269</div>
                   </div>
                   <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Phone</div>
+                    <div class="pb-2 fw-bolder"><i class="fab fa-whatsapp pe-2 text-muted"
+                      style="width:24px;opacity:0.85;"></i> WhatsApp </a> </div>
                   </div>
                   <div class="col-sm-7">
                     <div class="pb-2">+55 <%= contact.ddd %>
@@ -167,8 +167,6 @@
                   </div>
                   <div class="col-sm-7">
                     <div class="pb-2">
-                      <%= contact.address %> <span> - </span>
-                        <%= contact.district %> <span>,</span>
                           <%= contact.city %> <span> - </span>
                             <%= contact.state %> <span>,</span>
                               <%= contact.country %><span>.</span>
@@ -543,7 +541,7 @@
       <div class="text-small">
         <div class="mb-1">&copy; Material Resume. All rights reserved.</div>
         <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
-        <div>Custom - <a href="https://github.com/lucasdepessoa/curriculum" target="_blank">@lucasdepessoa</a></div>
+        <div>Custom - <a href="<%= contact.socialNetwork.gitHub %>" target="_blank">@lucasdepessoa</a></div>
       </div>
     </div>
   </footer>
