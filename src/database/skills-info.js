@@ -13,7 +13,7 @@ module.exports = {
     { tech: 'TypeScript', level: 'BEGINNER', style: 'bg-secondary', width: '30%', ariaValueNow: '30' },
     { tech: 'NodeJS', level: 'ADVANCE', style: 'bg-secondary', width: '75%', ariaValueNow: '75' },
     { tech: 'Git/GitHub', level: 'MASTER', style: 'bg-secondary', width: '95%', ariaValueNow: '95' },
-    { tech: 'Lógica de Programação', level: 'INSANE', style: 'bg-secondary', width: '100%', ariaValueNow: '100' },
+    { tech: 'Lógica de Programação', level: 'INSANE', style: 'bg-secondary', width: '99%', ariaValueNow: '99' },
     { tech: 'SQL', level: 'MASTER', style: 'bg-secondary', width: '95%', ariaValueNow: '95' }
   ],
   softSkills: [
