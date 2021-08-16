@@ -35,7 +35,7 @@ class resumeController {
 
   getContact(req, res) {
 
-    res.json(data.getContactInfo())
+    res.status.json(data.getContactInfo())
 
   }
 

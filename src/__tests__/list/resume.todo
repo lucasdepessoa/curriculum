@@ -1,3 +1,9 @@
-#Regras de funcionamento do Resume - API #
+#Operating rules of my Resume - API #
 
+  ☐ 'GET /'                Should return all data from all endpoints listed below and render the view 'index.ejs'.
+  ☐ 'GET /contact-info'    Should return all endpoint-related data in json.
+  ☐ 'GET /academic-info'   Should return all endpoint-related data in json.
+  ☐ 'GET /experience-info' Should return all endpoint-related data in json.
+  ☐ 'GET /skills-info'     Should return all endpoint-related data in json.
   
+  ☐ 'POST /'     Should send an email to lpessoadev@gmail.com and return a message to the user.
