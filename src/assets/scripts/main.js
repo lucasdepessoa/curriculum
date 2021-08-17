@@ -53,23 +53,23 @@ $(document).ready(function () {
 
       const message = await getMessage('/')
 
-      let msg = `` 
-      msg += `<div class="alert alert-${message.type} text-center " >`
-      msg += `<strong>${message.intro}</strong> ${message.message}`
-      msg += `</div>`
       
-      $('.afterMessage').html(msg)
-
-      setTimeout(() => {
-        $('.afterMessage').html('')
-      }, 4000);
-
       if (message.type == 'success') {
+
         $('#formContact').reset()
         $('#name').focus()
-      }
 
-    } catch (err) {
+        let msg = `` 
+        msg += `<div class="alert alert-${message.type} text-center " >`
+        msg += `<strong>${message.intro}</strong> ${message.message}`
+        msg += `</div>`
+        
+        $('.afterMessage').html(msg)
+  
+        setTimeout(() => {
+          $('.afterMessage').html('')
+        }, 4000);
+      }else {
 
         let msg = `` 
         msg += `<div class="alert alert-danger text-center" >`
@@ -82,6 +82,12 @@ $(document).ready(function () {
           $('.afterMessage').html('')
         }, 4000);
 
+      }
+
+    } catch (err) {
+      console.log('caiu no catch')
+      console.log(err)
+       
     }
   }
 
