@@ -1,9 +1,10 @@
 #Operating rules of my Resume - API #
 
-  ☐ 'GET /'                Should return all data from all endpoints listed below and render the view 'index.ejs'.
-  ☐ 'GET /contact-info'    Should return all endpoint-related data in json.
-  ☐ 'GET /academic-info'   Should return all endpoint-related data in json.
-  ☐ 'GET /experience-info' Should return all endpoint-related data in json.
-  ☐ 'GET /skills-info'     Should return all endpoint-related data in json.
+  ✔ 'GET /'                       Should return all data from all endpoints listed below and render the view 'index.ejs'. @done(21-08-16 21:42)
+  ✔ 'GET /contact-info'           Should return all endpoint-related data in json. @done(21-08-16 21:42)
+  ✔ 'GET /academic-info'          Should return all endpoint-related data in json. @done(21-08-16 21:43)
+  ✔ 'GET /experience-info'        Should return all endpoint-related data in json. @done(21-08-16 21:46)
+  ✔ 'GET /skills-info'            Should return all endpoint-related data in json. @done(21-08-16 21:46)
+  ✔ 'GET /qualifications-info'     Should return all endpoint-related data in json. @done(21-08-16 21:48)
   
   ☐ 'POST /'     Should send an email to lpessoadev@gmail.com and return a message to the user.

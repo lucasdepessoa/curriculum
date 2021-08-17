@@ -35,31 +35,31 @@ class resumeController {
 
   getContact(req, res) {
 
-    res.status.json(data.getContactInfo())
+    if (req.originalUrl == '/contact-info') res.status(200).send(data.getContactInfo())
 
   }
 
   getAcademic(req, res) {
 
-    res.status(200).json(data.getAcademicInfo())
+    if (req.originalUrl == '/academic-info') res.status(200).json(data.getAcademicInfo())
 
   }
 
   getExperience(req, res) {
 
-    res.status(200).json(data.getExperienceInfo())
+    if (req.originalUrl == '/experience-info') res.status(200).json(data.getExperienceInfo())
 
   }
 
   getSkills(req, res) {
 
-    res.status(200).json(data.getSkillsInfo())
+    if (req.originalUrl == '/skills-info') res.status(200).json(data.getSkillsInfo())
 
   }
 
   getQualifications(req, res) {
 
-    res.status(200).json(data.getQualificationsInfo())
+    if (req.originalUrl == '/qualifications-info') res.status(200).json(data.getQualificationsInfo())
 
   }
 
@@ -85,7 +85,7 @@ class resumeController {
       subject: 'New Contact from My Resume'
     }, (error, info) => {
       if (error) {
-        
+
         req.session.message = {
           type: 'danger',
           intro: 'Error: ',
@@ -103,6 +103,7 @@ class resumeController {
         }
 
         res.redirect(req.originalUrl + '#contact')
+
       }
     })
 
