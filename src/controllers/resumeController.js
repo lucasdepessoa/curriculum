@@ -85,24 +85,24 @@ class resumeController {
       subject: 'New Contact from My Resume'
     }, (error, info) => {
       if (error) {
-
-        req.session.message = {
-          type: 'danger',
-          intro: 'Error: ',
-          message: 'e-mail not sent'
+     
+        let message = {
+          "type": 'danger',
+          "intro": 'Error: ',
+          "message": `e-mail not sent ${error.code}`
         }
 
-        res.redirect(req.originalUrl + '#contact')
+        res.status(502).json(message)
 
       } else {
 
-        req.session.message = {
-          type: 'success',
-          intro: 'Success: ',
-          message: 'e-mail sended succefully'
+        let message = {
+          "type": 'success',
+          "intro": 'Success: ',
+          "message": 'e-mail sended succefully'
         }
 
-        res.redirect(req.originalUrl + '#contact')
+        res.status(201).json(message)
 
       }
     })

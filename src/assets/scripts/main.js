@@ -18,20 +18,76 @@ $(document).ready(function () {
 
   //run through all elements 'link' and adding 'ver' variabel with a new version
   $('link').each(function (e) {
-    switch($(this).attr('href')){
+    switch ($(this).attr('href')) {
       case '/assets/css/font-awesome/css/all.min.css':
         $(this).attr('href', `${$(this).attr('href')}?ver=${Date.now()}`)
-      break;
+        break;
       case '/assets/css/mdb.min.css':
         $(this).attr('href', `${$(this).attr('href')}?ver=${Date.now()}`)
-      break;
+        break;
       case '/assets/css/aos.css':
         $(this).attr('href', `${$(this).attr('href')}?ver=${Date.now()}`)
-      break;
+        break;
       case '/assets/css/main.css':
         $(this).attr('href', `${$(this).attr('href')}?ver=${Date.now()}`)
-      break;
+        break;
     }
+
+  })
+
+
+  function getMessage(url) {
+
+    let dados = $('#formContact').serialize()
+
+    return $.ajax({
+      type: 'POST',
+      url: url,
+      cache: false,
+      data: dados
+    })
+  }
+
+  async function getTest() {
+    try {
+
+      const message = await getMessage('/')
+
+      let msg = `` 
+      msg += `<div class="alert alert-${message.type} text-center " >`
+      msg += `<strong>${message.intro}</strong> ${message.message}`
+      msg += `</div>`
+      
+      $('.afterMessage').html(msg)
+
+      setTimeout(() => {
+        $('.afterMessage').html('')
+      }, 4000);
+
+      if (message.type == 'success') {
+        $('#formContact').reset()
+        $('#name').focus()
+      }
+
+    } catch (err) {
+
+        let msg = `` 
+        msg += `<div class="alert alert-danger text-center" >`
+        msg += `<strong>Error:</strong> Error Code ${err.status}`
+        msg += `</div>`
+        
+        $('.afterMessage').html(msg)
+
+        setTimeout(() => {
+          $('.afterMessage').html('')
+        }, 4000);
+
+    }
+  }
+
+  $('#btnSendEmail').on('click', function () {
+
+    getTest()
     
   })
 })

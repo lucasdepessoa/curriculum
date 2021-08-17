@@ -485,7 +485,7 @@
                     <%= contact.devEmail %></div>
                 </div>
                 <div class="mt-5 d-print-none">
-                  <form method="POST">
+                  <form id="formContact" method="POST">
                     <div class="form-outline mb-4">
                       <input type="text" id="name" name="name" class="form-control" required/>
                       <label class="form-label" for="name">Name</label>
@@ -498,16 +498,12 @@
                       <textarea class="form-control" name="message" style="resize: none;" id="message" rows="4" required></textarea>
                       <label class="form-label" for="message">Message</label>
                     </div>
+                    <div class="afterMessage">
 
-                    <!-- temporary solution -->
-                    <% if(message) { %>
-                      <div class="alert alert-<%= message.type %> text-center">
-                        <strong><%= message.intro %></strong><%= message.message %>
-                      </div>
-                    <% } %>
+                    </div>
                     
-                    <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
-                  </form>
+                    <button class="btn btn-info btn-block mb-4" id="btnSendEmail" type="button">Send</button>
+                    </form>
                 </div>
               </div>
               <div class="col-sm-12 col-md-7 d-print-none hideMAP" data-aos="zoom-in" data-aos-delay="100"><iframe
@@ -549,7 +545,6 @@
   <script src="/assets/scripts/mdb.min.js"></script>
   <script src="/assets/scripts/aos.js"></script>
   <script src="/assets/scripts/main.js"></script>
-  
  
 </body>
 
