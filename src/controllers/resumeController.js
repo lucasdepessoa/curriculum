@@ -85,6 +85,7 @@ class resumeController {
       subject: 'New Contact from My Resume'
     }, (error, info) => {
       if (error) {
+        console.log(error)
      
         let message = {
           "type": 'danger',
@@ -95,6 +96,7 @@ class resumeController {
         res.status(502).json(message)
 
       } else {
+        console.log('enviou')
 
         let message = {
           "type": 'success',

@@ -53,48 +53,41 @@ $(document).ready(function () {
 
       const message = await getMessage('/')
 
-      
-      if (message.type == 'success') {
 
+      let msg = ``
+      msg += `<div class="alert alert-${message.type} text-center " >`
+      msg += `<strong>${message.intro}</strong> ${message.message}`
+      msg += `</div>`
+
+      $('.afterMessage').html(msg)
+
+      setTimeout(() => {
+        $('.afterMessage').html('')
         $('#formContact').reset()
         $('#name').focus()
-
-        let msg = `` 
-        msg += `<div class="alert alert-${message.type} text-center " >`
-        msg += `<strong>${message.intro}</strong> ${message.message}`
-        msg += `</div>`
-        
-        $('.afterMessage').html(msg)
-  
-        setTimeout(() => {
-          $('.afterMessage').html('')
-        }, 4000);
-      }else {
-
-        let msg = `` 
-        msg += `<div class="alert alert-danger text-center" >`
-        msg += `<strong>Error:</strong> Error Code ${err.status}`
-        msg += `</div>`
-        
-        $('.afterMessage').html(msg)
-
-        setTimeout(() => {
-          $('.afterMessage').html('')
-        }, 4000);
-
-      }
+      }, 4000);
 
     } catch (err) {
       console.log('caiu no catch')
-      console.log(err)
-       
+
+      let msg = ``
+      msg += `<div class="alert alert-${err.responseJSON.type} text-center" >`
+      msg += `<strong>${err.responseJSON.intro}</strong> ${err.responseJSON.message}`
+      msg += `</div>`
+
+      $('.afterMessage').html(msg)
+
+      setTimeout(() => {
+        $('.afterMessage').html('')
+      }, 4000);
+
     }
   }
 
   $('#btnSendEmail').on('click', function () {
 
     getTest()
-    
+
   })
 })
 
