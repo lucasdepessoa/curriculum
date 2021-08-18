@@ -90,6 +90,12 @@ $(document).ready(function () {
     if($('#name').val() != '' && $('#email').val() != '' && $('#message').val() != ''){
       getTest()
     }else{
+
+      if($('#name').val() != '' && $('#email').val() != ''){
+        $('#message').select()
+        return false
+      }
+      
       $('#formContact input').each(function(e){
         if($(this).val() == ''){
           $(this).select()

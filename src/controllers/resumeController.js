@@ -76,7 +76,7 @@ class resumeController {
       },
       tls: { rejectUnauthorized: false }
     })
-    console.log(req.body.email)
+    
     //Sending an email//
     await transporter.sendMail({
       text: `Hello i'am ${req.body.name} and i mail e-mail is ${req.body.email}, i would like to say:\n ${req.body.message}`,
