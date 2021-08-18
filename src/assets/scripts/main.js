@@ -49,10 +49,10 @@ $(document).ready(function () {
   }
 
   async function getTest() {
+    
     try {
 
       const message = await getMessage('/')
-
 
       let msg = ``
       msg += `<div class="alert alert-${message.type} text-center " >`
@@ -63,12 +63,13 @@ $(document).ready(function () {
 
       setTimeout(() => {
         $('.afterMessage').html('')
-        $('#formContact').reset()
-        $('#name').focus()
+        $('#name').val('')
+        $('#email').val('')
+        $('#message').val('')
+        $('#name').select()
       }, 4000);
 
     } catch (err) {
-      console.log('caiu no catch')
 
       let msg = ``
       msg += `<div class="alert alert-${err.responseJSON.type} text-center" >`
