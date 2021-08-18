@@ -87,7 +87,18 @@ $(document).ready(function () {
 
   $('#btnSendEmail').on('click', function () {
 
-    getTest()
+    if($('#name').val() != '' && $('#email').val() != '' && $('#message').val() != ''){
+      getTest()
+    }else{
+      $('#formContact input').each(function(e){
+        if($(this).val() == ''){
+          $(this).select()
+          return false
+        }
+      })
+    }
+
+   
 
   })
 })
