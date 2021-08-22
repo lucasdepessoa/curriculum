@@ -13,10 +13,10 @@ In this project I just put my resume in the form of REST API, so recruiters can 
 GET /endpoint/
 ```
 
-##Layout mobile
+## Layout mobile
 Under development.
 
-##Layout web
+## Layout web
 Under development.
 
 # Technologies Used
@@ -24,7 +24,6 @@ Under development.
 ## Back end
   - NodeJs
   - Express
-  - Yarn
   - Jest TDD
   - Nodemon
 
