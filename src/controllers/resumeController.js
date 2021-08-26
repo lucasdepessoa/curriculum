@@ -35,31 +35,31 @@ class resumeController {
 
   getContact(req, res) {
 
-    if (req.originalUrl == '/contact-info') res.status(200).send(data.getContactInfo())
+    res.status(200).json(data.getContactInfo())
 
   }
 
   getAcademic(req, res) {
 
-    if (req.originalUrl == '/academic-info') res.status(200).json(data.getAcademicInfo())
+   res.status(200).json(data.getAcademicInfo())
 
   }
 
   getExperience(req, res) {
 
-    if (req.originalUrl == '/experience-info') res.status(200).json(data.getExperienceInfo())
+    res.status(200).json(data.getExperienceInfo())
 
   }
 
   getSkills(req, res) {
 
-    if (req.originalUrl == '/skills-info') res.status(200).json(data.getSkillsInfo())
+    res.status(200).json(data.getSkillsInfo())
 
   }
 
   getQualifications(req, res) {
 
-    if (req.originalUrl == '/qualifications-info') res.status(200).json(data.getQualificationsInfo())
+    res.status(200).json(data.getQualificationsInfo())
 
   }
 
