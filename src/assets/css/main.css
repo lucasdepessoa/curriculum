@@ -78,7 +78,7 @@ html, body {
 }
 
 .cover {
-  height: 500px;
+  height: 600px;
 }
 
 .cover>img {
@@ -246,10 +246,16 @@ i.iconQuali {
 }
 
 @media print {
+  .cover{
+    height: 600px!important;
+  }
   body {
     margin: 0;
     padding: 0;
     line-height: 1.2em;
+  }
+  .name-custom{
+    margin-bottom:180px;
   }
   .sidA {
     width: 50%;
