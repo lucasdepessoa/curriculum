@@ -1,10 +1,25 @@
 module.exports = [
   {
+    company: "HUB FLORIPA",
+    companyAdress: "-",
+    office: "Full Stack Developer",
+    dateStart: "2022-05-01",
+    dateEnd: "Present",
+    jobDescription: [
+      "Tecnologias trabalhadas durante o período:",
+      "JAVA + Spring Boot",
+      "JAVA + Swing",
+      "JAVA JSP",
+      "Angular",
+      "Mysql",
+    ],
+  },
+  {
     company: "BILD DESENVOLVIMENTO IMOBILIÁRIO",
     companyAdress: "-",
     office: "BackEnd Developer",
     dateStart: "2021-09-20",
-    dateEnd: "Present",
+    dateEnd: "2022-09-20",
     jobDescription: [
       "Tecnologias trabalhadas durante o período:",
       "PHP/LARAVEL",

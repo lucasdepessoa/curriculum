@@ -29,7 +29,7 @@ module.exports = {
     { tech: 'Sequelize', level: 'MEDIUM', style: 'bg-secondary', width: '50%', ariaValueNow: '50' },
     { tech: 'JEST (TDD)', level: 'EXPERT', style: 'bg-secondary', width: '85%', ariaValueNow: '85' },
     { tech: 'Express', level: 'MEDIUM', style: 'bg-secondary', width: '50%', ariaValueNow: '50' },
-    { tech: 'Spring', level: 'MEDIUM', style: 'bg-secondary', width: '50%', ariaValueNow: '50' },
+    { tech: 'Spring + Spring Boot', level: 'MEDIUM', style: 'bg-secondary', width: '50%', ariaValueNow: '50' },
     { tech: 'ChartJS', level: 'MEDIUM', style: 'bg-info', width: '50%', ariaValueNow: '50' },
     { tech: 'Angular', level: 'MEDIUM', style: 'bg-info', width: '50%', ariaValueNow: '50' },
     { tech: 'NodeJS', level: 'ADVANCE', style: 'bg-secondary', width: '75%', ariaValueNow: '75' },
